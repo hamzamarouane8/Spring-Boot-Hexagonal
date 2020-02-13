@@ -1,0 +1,6 @@
+rootProject.name = 'sweet-salt-branches'
+['sweetsalt-branches-domain','sweetsalt-branches-application'].each {
+    include ":${it}"
+    project(":${it}").projectDir = file("src/${it}")
+}
+
